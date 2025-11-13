@@ -32,3 +32,14 @@ def analisar_profissionais():
         {"nome": "Patrícia", "idade": 28, "profissao": "Analista de Sustentabilidade", "pontuacao": 84},
         {"nome": "Thiago", "idade": 27, "profissao": "Programador Python", "pontuacao": 90},
     ]
+
+    # Função interna: Merge Sort para ordenar os profissionais por pontuação
+    def merge_sort(lista):
+        if len(lista) <= 1:
+            return lista
+
+        meio = len(lista) // 2
+        esquerda = merge_sort(lista[:meio])
+        direita = merge_sort(lista[meio:])
+
+        return merge(esquerda, direita)
