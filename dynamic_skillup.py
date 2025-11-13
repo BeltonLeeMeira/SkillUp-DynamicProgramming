@@ -61,3 +61,6 @@ def analisar_profissionais():
 
     # Ordena os dados
     ordenados = merge_sort(profissionais)
+
+    # Cria um DataFrame para visualização
+    df = pd.DataFrame(ordenados)
