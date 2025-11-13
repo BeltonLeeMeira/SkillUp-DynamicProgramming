@@ -64,3 +64,18 @@ def analisar_profissionais():
 
     # Cria um DataFrame para visualização
     df = pd.DataFrame(ordenados)
+
+    # Estrutura de saída com estatísticas
+    print("\n===== RELATÓRIO DE QUALIFICAÇÃO PROFISSIONAL =====")
+    print(df.to_string(index=False))
+    print("---------------------------------------------------")
+    print(f"Média de pontuação: {df['pontuacao'].mean():.2f}")
+    print(f"Maior pontuação: {df['pontuacao'].max()}")
+    print(f"Menor pontuação: {df['pontuacao'].min()}")
+    print("---------------------------------------------------")
+    print("Top 3 profissionais mais qualificados:")
+    for i in range(3):
+        print(f"{i+1}. {df.iloc[i]['nome']} - {df.iloc[i]['profissao']} ({df.iloc[i]['pontuacao']})")
+
+# Chama a função principal
+analisar_profissionais()
