@@ -58,3 +58,6 @@ def analisar_profissionais():
         resultado.extend(esquerda[i:])
         resultado.extend(direita[j:])
         return resultado
+
+    # Ordena os dados
+    ordenados = merge_sort(profissionais)
