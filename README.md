@@ -1,4 +1,4 @@
-# SkillUp Data – Dynamic Programming
+# SkillUp Data
 
 ## Objetivo
 Analisar e ordenar dados de profissionais de acordo com seu nível de qualificação, utilizando **Merge Sort** e **programação funcional** em Python.
