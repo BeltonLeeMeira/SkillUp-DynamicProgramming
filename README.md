@@ -20,8 +20,9 @@ Analisar e ordenar dados de profissionais de acordo com seu nível de qualifica�
 
 ---
 
-## Execução
-1. Baixe o arquivo `dynamic_skillup.py`
-2. Instale o pandas, se necessário:
-   ```bash
-   pip install pandas
+## 🔹 1. Clonar o repositório
+No terminal ou prompt de comando, execute:
+git clone https://github.com/BeltonLeeMeira/SkillUp-DynamicProgramming.git
+
+## 🔹 2. Instale o pandas, se necessário:
+- pip install pandas
